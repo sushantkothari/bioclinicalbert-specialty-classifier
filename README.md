@@ -104,7 +104,7 @@ All five available clinical metadata fields are concatenated into a single struc
 
 ### Long-Document Handling
 
-Clinical notes routinely exceed the 512-token context limit of BERT-family models. Rather than truncating, the pipeline applies an overlapping sliding window:
+Clinical notes often exceed the 512-token context window supported by BERT-based models. Rather than truncating, the pipeline applies an overlapping sliding window:
 
 - Each note is fully tokenized without truncation
 - Token windows of 382 tokens are extracted with a stride of 96 tokens, producing overlapping chunks that share context at boundaries
