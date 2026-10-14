@@ -155,7 +155,7 @@ The model is evaluated at two distinct granularities, each serving a different d
 
 ### Chunk-Level Evaluation
 
-Every individual chunk of every test note is classified independently. This produces a large evaluation set and reveals how well the model handles partial clinical document context.
+Each chunk of every test note is classified separately, creating a large evaluation dataset that assesses the model’s ability to interpret incomplete clinical context.
 
 ### Note-Level Evaluation
 
